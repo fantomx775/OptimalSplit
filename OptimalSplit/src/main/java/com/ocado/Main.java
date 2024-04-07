@@ -21,6 +21,6 @@ public class Main {
         Map<String, List<String>> delivery = basketSplitter.split(test1);
 
 //        Uncomment the following line to see the output in console
-//        delivery.forEach((courier, items) -> System.out.println("\nCourier: " + courier + ",\nItems: " + items));
+        delivery.forEach((courier, items) -> System.out.println("\nCourier: " + courier + ",\nItems: " + items));
     }
 }
