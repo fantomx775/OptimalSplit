@@ -1,4 +1,4 @@
-package com.ocado;
+package com.ocado.basket;
 
 import com.ocado.basket.BasketSplitter;
 
@@ -26,16 +26,11 @@ public class BasketSplitterTest {
 
         List<String> items = Arrays.asList("Item1", "Item2", "Item3", "Item4");
 
-        try {
-            Method method = BasketSplitter.class.getDeclaredMethod("checkIfAllItemsAreCovered", Map.class, Set.class, List.class);
-            method.setAccessible(true);
-            boolean result = (boolean) method.invoke(basketSplitter, delivery, courierSet, items);
+        boolean result = basketSplitter.checkIfAllItemsAreCovered(delivery, courierSet, items);
 
-            assertTrue(result);
-        } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException e) {
-            e.printStackTrace();
-        }
+        assertTrue(result);
     }
+
 
     @Test
     void testGenerateSubsets() {

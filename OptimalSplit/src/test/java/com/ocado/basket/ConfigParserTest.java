@@ -1,4 +1,4 @@
-package com.ocado;
+package com.ocado.basket;
 
 import com.ocado.basket.ConfigParser;
 import org.junit.jupiter.api.Test;
