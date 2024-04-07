@@ -9,9 +9,22 @@ The Delivery Grouping Library is designed to facilitate the grouping of items in
 The task involves creating a library that divides items in a customer's shopping cart into delivery groups. An API has been predefined for the program. The library should load a configuration file containing the available delivery methods for all products offered in the store. Since this configuration is relatively static, it is stored in a file to be read by the library implementation.
 
 ## Table of Contents
-
+- [Usage](#usage)
 - [Configuration File](#configuration)
-- [How it works](#howitworks)
+- [How it works](#how-it-works)
+
+## Usage
+
+To use library simply import this file to your project:
+`OptimalSplit-1.0-SNAPSHOT.jar`
+which you will find in `OptimalSplit\target` folder. You can download it from here: https://drive.google.com/file/d/1D6Jt52a3cmZ6jPlrJsD17CqbxioKPNTP/view?usp=sharing
+
+Then you can use class
+```javasript
+import com.ocado.basket.BasketSplitter
+
+BasketSplitter basketSplitter = new BasketSplitter(pathToConfigFile);
+```
 
 ## Configuration
 
