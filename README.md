@@ -10,29 +10,8 @@ The task involves creating a library that divides items in a customer's shopping
 
 ## Table of Contents
 
-- [Installation](#installation)
-- [Usage](#usage)
 - [Configuration File](#configuration)
 - [How it works](#howitworks)
-
-## Installation
-
-Provide instructions on how to install your project and any dependencies it may have.
-
-```bash
-npm install your-package-name
-```
-
-## Usage
-
-Explain how to use your project. This could include code examples, screenshots, or a step-by-step guide.
-
-```javascript
-const yourPackage = require('your-package-name');
-
-// Example usage
-yourPackage.function();
-```
 
 ## Configuration
 
