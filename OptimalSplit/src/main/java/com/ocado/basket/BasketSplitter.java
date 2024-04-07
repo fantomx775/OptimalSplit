@@ -82,8 +82,8 @@ public class BasketSplitter {
             }
         }
         return result;
-
     }
+
     public Map<String, List<String>> split(List<String> items) {
         HashMap<String, Set<String>> delivery = new HashMap<>();
         for (String item : items) {
