@@ -20,7 +20,7 @@ public class ConfigParser {
         }
         reader.close();
 
-        TypeToken<Map<String, List<String>>> typeToken = new TypeToken<>() {};
+        TypeToken<Map<String, List<String>>> typeToken = new TypeToken<Map<String, List<String>>>() {};
         Map<String, List<String>> configMap = gson.fromJson(stringBuilder.toString(), typeToken.getType());
 
         return configMap;
